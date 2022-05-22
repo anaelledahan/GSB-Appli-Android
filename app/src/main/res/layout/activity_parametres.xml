@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FFFFFF"
+android:orientation="vertical"
+tools:context=".Parametres">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="67dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/logolebon" />
+
+</LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center"
+                android:text="Paramètres"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/codeVisiteur2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Code visiteur :" />
+
+            <EditText
+                android:id="@+id/codeVisiteur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                  "
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="106dp" />
+
+            <TextView
+                android:id="@+id/nom2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Nom :" />
+
+            <EditText
+                android:id="@+id/nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                  "
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="159dp" />
+
+            <TextView
+                android:id="@+id/prenom2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Prenom :" />
+
+            <EditText
+                android:id="@+id/prenom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                  "
+                tools:layout_editor_absoluteX="68dp"
+                tools:layout_editor_absoluteY="208dp" />
+
+            <TextView
+                android:id="@+id/email2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Email :" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                  "
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="259dp" />
+
+            <TextView
+                android:id="@+id/urlServeur2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Url Serveur :" />
+
+            <EditText
+                android:id="@+id/urlServeur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="                  "
+                tools:layout_editor_absoluteX="68dp"
+                tools:layout_editor_absoluteY="311dp" />
+
+            <TextView
+                android:id="@+id/motDePasselabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mot de passe:" />
+
+            <EditText
+                android:id="@+id/motDePasse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                tools:layout_editor_absoluteX="72dp"
+                tools:layout_editor_absoluteY="159dp" />
+
+            <Button
+                android:id="@+id/buttonValider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="MonClick2"
+                android:text="Valider"
+                tools:layout_editor_absoluteX="68dp"
+                tools:layout_editor_absoluteY="372dp" />
+
+            <Button
+                android:id="@+id/retour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clique_retour2"
+                android:text="Retour"
+                tools:layout_editor_absoluteX="68dp"
+                tools:layout_editor_absoluteY="372dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
